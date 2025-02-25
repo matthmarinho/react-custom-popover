@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 50px;
+  font: normal 18px/1.4 Arial, sans-serif;
+}
+
+.container {
+  height: 200px;
+  width: 100%;
+  background-color: #aabbcc;
+  padding: 8px;
+}
+
+.overflowContainer {
+  display: flex;
+  gap: 8px;
+  overflow: auto;
+}
+
+.card {
+  height: 100px;
+  width: 100px;
+  background-color: #323432;
+}
+
+.picker {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 16px;
+  z-index: 9999;
+}
+
+.swatch {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.popover {
+  position: absolute;
+  border-radius: 9px;
+  z-index: 1000;
+  height: 100px;
+  background-color: #ff0000;
+  padding: 8px;
+}
+
+.input {
+  margin-left: 8px;
+  width: fit-content;
+}
